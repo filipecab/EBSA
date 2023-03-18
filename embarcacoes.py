@@ -16,6 +16,17 @@ def main():
     titulo.setStyle("bold")
     titulo.draw(win)
 
+    menssagem=Text(Point(395,300),"Qual a embarcação? ")
+    menssagem.setFill("blue")
+    menssagem.draw(win)
+
+    entrada=Entry(Point(395,350),10)
+    entrada.draw(win)
+    retorno=entrada.getText()
+    print(retorno)
+
+
+
     win.getMouse() 
     win.close()
         
