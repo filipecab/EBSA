@@ -32,6 +32,16 @@ def inicio(win):
 
     return p_menssagem
 
+def Menu(win):
+    menu=Text(Point(395,400),"Clique esc para acessar o menu")
+    menu.setFill("blue")
+    menu.draw(win)
+
+    return menu
+
+
+
+
 def embarcacoes(win):
     embarcacao=Text(Point(395,300),"Qual a embarcação? ")
     embarcacao.setFill("blue")

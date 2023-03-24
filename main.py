@@ -25,6 +25,8 @@ def main():
     ebsa=ms.logo(win)
     titulo=ms.titulo(win)
     inicio=ms.inicio(win)
+    menu=ms.Menu(win)
+    lp.loopTela(win)    
     
     
 
