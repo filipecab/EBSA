@@ -26,9 +26,9 @@ def inicio(win):
     p_menssagem.setFill("blue")
     p_menssagem.draw(win)
 
-    enter=fc.sumirMensagens(win,p_menssagem)
-    if enter=="Return":
-        p_menssagem.undraw()
+    getkey=win.getKey()
+    if getkey=="Return":
+        sumir=fc.sumirMensagens(win,p_menssagem,getkey)
 
     return p_menssagem
 
@@ -49,5 +49,19 @@ def embarcacoes(win):
 
     return embarcacao
 
-def quantidade():
-    pass
+def quantidade(win):
+    quantidade=Text(Point(395,300),"Quantidade? ")
+    quantidade.setFill("blue")
+    quantidade.draw(win)
+
+    
+
+    return quantidade
+
+
+def destino(win):
+    destino=Text(Point(395,300),"Destino? ")
+    destino.setFill("blue")
+    destino.draw(win)
+    
+    return destino
