@@ -1,3 +1,5 @@
+from graphics import *
+
 #listas de objetos
 embarcacaolist=[]
 quantidadelist=[]
@@ -8,4 +10,5 @@ atracacaodialist=[]
 atracacaohoralist=[]
 saidadialist=[]
 saidahoralist=[]
-    
+
+

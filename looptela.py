@@ -9,8 +9,10 @@ def loopTela(win):
         palavra=entrada.getText()
         enter=win.getKey()
         if enter=="Return":
+            fc.lista(palavra)
             entrada.undraw()
             entrada=fc.loopentrada(win)
+            
             return enter
 
             

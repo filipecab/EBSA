@@ -4,6 +4,9 @@ import looptela as lp
 
 import funcoesdiversas as fc
 
+
+#todas as mensagens da tela
+
 def logo(win):
     empresa = Text(Point(395,100), "EBSA")
     empresa.setFill("blue")
@@ -29,7 +32,12 @@ def inicio(win):
     getkey=win.getKey()
     if getkey=="Return":
         sumir=fc.sumirMensagens(win,p_menssagem,getkey)
-
+    else:
+        while getkey!="Return":
+            getkey=win.getKey()
+            if getkey=="Return":
+                sumir=fc.sumirMensagens(win,p_menssagem,getkey)
+                break
     return p_menssagem
 
 def Menu(win):
@@ -110,3 +118,9 @@ def saidahora(win):
 
     return saidahora
 
+def continuar(win):
+    continua=Text(Point(395,300),"Digite 1 para digitar outra linha e 2 para parar")
+    continua.setFill("blue")
+    continua.draw(win)
+
+    return continua

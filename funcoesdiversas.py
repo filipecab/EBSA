@@ -3,7 +3,7 @@ from graphics import *
 import mensagensTela as ms
 import looptela as lp
 
-
+#some as mensagens na tela
 def sumirMensagens(win,mensagem,enter):
     
     if enter=="Return":
@@ -11,6 +11,7 @@ def sumirMensagens(win,mensagem,enter):
 
     return mensagem
 
+#mensagens da tela
 def mensagensloop(win,cont):
 
     if cont==0:
@@ -88,12 +89,18 @@ def mensagensloop(win,cont):
                 sumir=sumirMensagens(win,mensagem,enter)
                 break
     
+
     return cont
     
+#input de entrada 
 def loopentrada(win): 
     entrada=Entry(Point(395,350),10)
     entrada.draw(win)
 
     return entrada
 
-    
+#lista de objetos
+listaobjetos=[]
+def lista(palavra):     
+    listaobjetos.append(palavra)
+    print(listaobjetos)
