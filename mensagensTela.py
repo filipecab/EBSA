@@ -47,6 +47,8 @@ def embarcacoes(win):
     embarcacao.setFill("blue")
     embarcacao.draw(win)
 
+    
+
     return embarcacao
 
 def quantidade(win):
@@ -55,7 +57,6 @@ def quantidade(win):
     quantidade.draw(win)
 
     
-
     return quantidade
 
 
@@ -65,3 +66,47 @@ def destino(win):
     destino.draw(win)
     
     return destino
+
+def fundeioday(win):
+    fundeiodia=Text(Point(395,300),"Fundeio dia? dia/mes/ano")
+    fundeiodia.setFill("blue")
+    fundeiodia.draw(win)
+
+    return fundeiodia
+
+def fundeiohora(win):
+    fundeiohora=Text(Point(395,300),"Fundeio hora? hora:minuto")
+    fundeiohora.setFill("blue")
+    fundeiohora.draw(win)
+
+    return fundeiohora
+
+def atracacaodia(win):
+    atracacaodia=Text(Point(395,300),"Atracação dia? dia/mes/ano")
+    atracacaodia.setFill("blue")
+    atracacaodia.draw(win)
+
+    return atracacaodia
+
+def atracacaohora(win):
+    atracacaohora=Text(Point(395,300),"Atracação hora? hora:minuto")
+    atracacaohora.setFill("blue")
+    atracacaohora.draw(win)
+
+    return atracacaohora
+
+def saidadia(win):
+    saidadia=Text(Point(395,300),"Saida dia? dia/mes/ano")
+    saidadia.setFill("blue")
+    saidadia.draw(win)
+
+    return saidadia
+
+
+def saidahora(win):
+    saidahora=Text(Point(395,300),"Saida hora? hora:minuto")
+    saidahora.setFill("blue")
+    saidahora.draw(win)
+
+    return saidahora
+

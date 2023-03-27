@@ -9,7 +9,7 @@ win.setBackground("black")
 
 def main():
     #contagem
-    cont=1
+    cont=0
     
     #criação de tela
     ebsa=ms.logo(win)
@@ -17,14 +17,11 @@ def main():
     inicio=ms.inicio(win)
     menu=ms.Menu(win)
 
-    embarcacao=ms.embarcacoes(win)
-
+    #escrita e mensagem
     while True:
-        enter=lp.loopTela(win)
-        if enter=="Return":
-            embarcacao.undraw()
-            mensagem=fc.mensagensloop(win,cont)
-            cont+=1
+        cont=fc.mensagensloop(win,cont)       
+            
+            
             
     
     
