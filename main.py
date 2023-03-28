@@ -20,14 +20,8 @@ def main():
     #escrita e mensagem
     while True:
         cont=fc.mensagensloop(win,cont)
-        if cont==9:
-            break 
-            
-            
-            
-    
-    
-    
+        if cont==10:
+           break
 
 
     win.getMouse() 
